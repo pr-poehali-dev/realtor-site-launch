@@ -30,6 +30,7 @@ const OBJECTS = [
     description: "Элитный жилой комплекс в центре города. Авторская архитектура, закрытая территория с охраной, консьерж-сервис, подземный паркинг.",
     badge: "Премиум",
     media: [
+      { type: "image" as const, url: "https://cdn.poehali.dev/projects/25a5ac46-0162-4217-a1c6-78650c76d047/bucket/4f25f2b6-dfea-41bc-97bd-354030af100c.jpg", caption: "Интерьер апартаментов" },
       { type: "image" as const, url: "https://cdn.poehali.dev/projects/25a5ac46-0162-4217-a1c6-78650c76d047/files/35c9e4cc-0f2c-451c-9c64-840fb27e0e15.jpg", caption: "Фасад комплекса" },
       { type: "image" as const, url: "https://cdn.poehali.dev/projects/25a5ac46-0162-4217-a1c6-78650c76d047/files/29389a3d-ba41-4d87-8902-4590df65ba5d.jpg", caption: "Вид на район" },
     ],
