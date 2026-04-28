@@ -203,19 +203,65 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-14 bg-accent">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-semibold text-accent-foreground mb-4">
-            Не нашли нужный объект?
-          </h2>
-          <p className="text-accent-foreground/80 mb-7 max-w-md mx-auto">
-            Оставьте заявку — мы подберём варианты под ваши требования в течение 24 часов
-          </p>
-          <button className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold px-8 py-3.5 hover:opacity-90 transition-opacity tracking-wide">
-            Оставить заявку
-            <Icon name="ArrowRight" size={15} />
-          </button>
+      {/* Contact Form */}
+      <section id="request" className="py-16 bg-accent">
+        <div className="container mx-auto px-6">
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="font-display text-3xl md:text-4xl font-semibold text-accent-foreground mb-3">
+                Не нашли нужный объект?
+              </h2>
+              <p className="text-accent-foreground/75">
+                Оставьте заявку — мы подберём варианты под ваши требования в течение 24 часов
+              </p>
+            </div>
+            <div className="bg-white p-8 md:p-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+                <div>
+                  <label className="block text-xs font-semibold text-foreground tracking-widest uppercase mb-2">Имя</label>
+                  <input
+                    type="text"
+                    placeholder="Иван Иванов"
+                    className="w-full border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors bg-background"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-semibold text-foreground tracking-widest uppercase mb-2">Телефон</label>
+                  <input
+                    type="tel"
+                    placeholder="+7 (___) ___-__-__"
+                    className="w-full border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors bg-background"
+                  />
+                </div>
+              </div>
+              <div className="mb-5">
+                <label className="block text-xs font-semibold text-foreground tracking-widest uppercase mb-2">Тип объекта</label>
+                <select className="w-full border border-border px-4 py-3 text-sm text-foreground focus:outline-none focus:border-primary transition-colors bg-background appearance-none">
+                  <option value="">Выберите тип...</option>
+                  <option>Офис</option>
+                  <option>Склад / Логистика</option>
+                  <option>Торговая площадь</option>
+                  <option>Жилая недвижимость</option>
+                  <option>Другое</option>
+                </select>
+              </div>
+              <div className="mb-7">
+                <label className="block text-xs font-semibold text-foreground tracking-widest uppercase mb-2">Комментарий</label>
+                <textarea
+                  rows={3}
+                  placeholder="Площадь, бюджет, район, пожелания..."
+                  className="w-full border border-border px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors bg-background resize-none"
+                />
+              </div>
+              <button className="w-full bg-primary text-primary-foreground font-semibold py-3.5 hover:bg-foreground transition-colors tracking-wide uppercase text-sm flex items-center justify-center gap-2">
+                Отправить заявку
+                <Icon name="ArrowRight" size={15} />
+              </button>
+              <p className="text-xs text-muted-foreground text-center mt-4">
+                Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
